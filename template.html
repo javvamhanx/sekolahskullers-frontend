@@ -10,6 +10,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Custom CSS, untuk template dan konten -->
     <link rel="stylesheet" href="css/template.css" />
@@ -20,10 +21,13 @@
   <body>
     <!-- Navbar start -->
     <nav
-      class="navbar fixed-top navbar-expand-md navbar-light bg-white border-bottom"
-    >
+      class="navbar fixed-top navbar-expand-lg navbar-dark bg-custom">
       <div class="container">
-        <a href="#" class="navbar-brand mr-5">Sekolah Skullers</a>
+        <a href="#" class="navbar-brand mr-5 py-1">
+          <h4 class="m-0">
+            Sekolah Skullers
+          </h4></a
+        >
         <button
           class="navbar-toggler"
           type="button"
@@ -37,14 +41,23 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <div class="navbar-nav text-center">
-            <a href="#" class="nav-item nav-link mr-md-3 mr-0 active">View 1</a>
-            <a href="#" class="nav-item nav-link mr-md-3 mr-0">View 2</a>
-            <a href="#" class="nav-item nav-link mr-md-3 mr-0">View 3</a>
-            <a href="#" class="nav-item nav-link mr-md-3 mr-0">View 4</a>
-            <a href="#" class="nav-item nav-link mr-md-3 mr-0">View 5</a>
+            <a href="#" class="nav-item nav-link mr-lg-3 mr-0 active">View 1</a>
+            <a href="#" class="nav-item nav-link mr-lg-3 mr-0">View 2</a>
+            <a href="#" class="nav-item nav-link mr-lg-3 mr-0">View 3</a>
+            <a href="#" class="nav-item nav-link mr-lg-3 mr-0">View 4</a>
+            <a href="#" class="nav-item nav-link mr-lg-3 mr-0">View 5</a>
           </div>
           <div class="navbar-nav ml-auto">
-            <a href="#" class="btn btn-primary my-2 my-md-0">Login</a>
+            <button type="button" class="btn btn-custom my-2 my-lg-0" data-toggle="modal" data-target="#ModalLogin">
+              <div class="container justify-content-center p-0">
+                <img
+                  class="icon pr-2"
+                  src="icon/person-circle.svg"
+                  alt="person-circle"
+                />
+                <span>Login</span>
+              </div>
+            </button>
           </div>
         </div>
       </div>
@@ -82,9 +95,77 @@
       </table>
     </div>
     <!-- Leaderboard end -->
+	
+	 <!-- Footer start -->
+    <footer class="p-3">
+      <p class="text-center">&copy; 2020 HMFT-ITB</p>
+      <div class="container d-flex flex-column align-items-center">
+        <a class="mb-3" href="http://hmft.tf.itb.ac.id/">hmft.tf.itb.ac.id</a>
+        <div class="ig d-flex align-items-center p-1">
+          <img src="icon/ig.png" alt="instagram" height="20" />
+          <a href="http://instagram.com/sekolahskullers/">Sekolah Skullers</a>
+          <a href="http://instagram.com/hmft_itb/">HMFT-ITB</a>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+	
+	<!-- Modal -->
+	<div class="modal fade" id="ModalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
+		  <div class="modal-header bg-secondary text-white pb-1 pt-1">
+			<div class="container justify-content-start p-0">
+				<div class="row pl-3">
+					<img
+					  class="icon pr-0 rounded-circle"
+					  width="45"
+					  src="icon/logo sekolah skullers.png"
+					  alt="person-circle"
+					/>
+					<h5 class="ml-2 mt-2">Selamat Datang di Sekolah Skullers!</h5>
+				</div>
+			</div>
+			<button type="button" class="close" color="#fff7cc;" data-dismiss="modal" aria-label="Close">
+			  <span aria-hidden="true">&times;</span>
+			</button>
+		  </div>
+		  <div class="modal-body pb-0" style="background-color:Gainsboro;">
+			<form>
+				<div class="form-group">
+					<label for="InputNIM1">NIM</label>
+					<input type="NIM" class="form-control" id="InputNIM1" aria-describedby="NIMHelp">
+					<small id="NIMHelp" class="form-text text-muted">Ex. 13319001</small>
+				</div>
+				<div class="form-group">
+					<label for="InputPassword1">Password</label>
+					<div class="input-group">
+						<input type="password" class="form-control" name="password" id="InputPassword1" data-toggle="password">	
+						<div class="input-group-append">
+							<span class="input-group-text">	
+							  <i class="fa fa-eye"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+				<div class="form-group form-check">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1">
+					<label class="form-check-label" for="exampleCheck1">Remember me</label>
+				</div>
+			</form>
+		  </div>
+		  <div class="modal-footer pt-2 pb-2" style="background-color:Gainsboro;">
+			<a href="#" class="small nav-item nav-link text-muted mr-lg-0 ml-auto active">forgot your password?</a>
+			<button type="button" class="btn btn-primary">Login</button>
+		  </div>
+		</div>
+	  </div>
+	</div>
 
     <!-- Custom Script, jika diperlukan -->
     <script src="js/script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="bootstrap-show-password.min.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
