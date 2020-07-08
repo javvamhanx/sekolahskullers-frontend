@@ -1,3 +1,4 @@
+/* FONT */
 @font-face {
   font-family: "piratesbayregular";
   src: url("../font/piratesbay-webfont.woff2") format("woff2"),
@@ -66,7 +67,7 @@ footer a:hover {
 
 /* LAYOUT */
 main .container {
-  padding-top: calc(15px + 62px);
+  padding-top: calc(1rem + 62px);
 }
 
 main h1 {
@@ -90,4 +91,8 @@ footer li {
 
 footer li a {
   margin: 0;
+}
+
+.img img {
+  margin: 0 0.5rem;
 }
