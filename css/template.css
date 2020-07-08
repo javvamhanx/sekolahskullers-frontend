@@ -1,38 +1,6 @@
-/* FONT */
-@font-face {
-  font-family: "piratesbayregular";
-  src: url("../font/piratesbay-webfont.woff2") format("woff2"),
-    url("../font/piratesbay-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "forumregular";
-  src: url("../font/forum-regular-webfont.woff2") format("woff2"),
-    url("../font/forum-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
 /* STYLE */
 body {
-  font-family: "forumregular", cursive;
   font-size: 1.2rem;
-}
-
-.bg-custom {
-  background-color: #322338;
-}
-
-.btn-custom {
-  background-color: #fff;
-  color: #322338;
-  font-family: "piratesbayregular", cursive;
-}
-
-.btn-custom:hover {
-  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .navbar-brand {
@@ -42,10 +10,6 @@ body {
 
 .btn-icon {
   transform: scale(1.1);
-}
-
-.btn-text {
-  font-size: 1.1rem;
 }
 
 footer {
