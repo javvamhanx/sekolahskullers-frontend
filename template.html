@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="h-100" lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -8,169 +8,190 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <!-- Bootstrap CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Custom CSS, untuk template dan konten -->
+    <link rel="stylesheet" href="css/custom.css" />
+
     <link rel="stylesheet" href="css/template.css" />
-    <link rel="stylesheet" href="css/leaderboard.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <title>Template</title>
   </head>
-  <body>
-    <!-- Navbar start -->
-    <nav
-      class="navbar fixed-top navbar-expand-lg navbar-dark bg-custom">
-      <div class="container">
-        <a href="#" class="navbar-brand mr-5 py-1">
-          <h4 class="m-0">
-            Sekolah Skullers
-          </h4></a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="navbar-nav text-center">
-            <a href="#" class="nav-item nav-link mr-lg-3 mr-0 active">View 1</a>
-            <a href="#" class="nav-item nav-link mr-lg-3 mr-0">View 2</a>
-            <a href="#" class="nav-item nav-link mr-lg-3 mr-0">View 3</a>
-            <a href="#" class="nav-item nav-link mr-lg-3 mr-0">View 4</a>
-            <a href="#" class="nav-item nav-link mr-lg-3 mr-0">View 5</a>
-          </div>
-          <div class="navbar-nav ml-auto">
-            <button type="button" class="btn btn-custom my-2 my-lg-0" data-toggle="modal" data-target="#ModalLogin">
-              <div class="container justify-content-center p-0">
-                <img
-                  class="icon pr-2"
-                  src="icon/person-circle.svg"
-                  alt="person-circle"
-                />
-                <span>Login</span>
-              </div>
-            </button>
+  <body class="d-flex flex-column h-100">
+    
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-custom">
+        <div class="container">
+          <a href="#" class="navbar-brand mr-0 mr-lg-5"> Sekolah Skullers</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <div class="navbar-nav text-center">
+              <a href="#" class="nav-item nav-link mr-lg-3 active">View 1</a>
+              <a href="#" class="nav-item nav-link mr-lg-3">View 2</a>
+              <a href="#" class="nav-item nav-link mr-lg-3">View 3</a>
+              <a href="#" class="nav-item nav-link mr-lg-3">View 4</a>
+              <a href="#" class="nav-item nav-link mr-lg-3">View 5</a>
+            </div>
+            <!-- UNTUK SESI ANON -->
+            <div class="navbar-nav ml-auto">
+              <button
+                class="btn btn-custom-light my-lg-0 my-1"
+                data-toggle="modal"
+                data-target="#login"
+              >
+                <div class="container justify-content-center px-0">
+                  <img
+                    class="btn-icon mr-2"
+                    src="icon/person-fill.svg"
+                    alt="user"
+                  />
+                  <span>Log In</span>
+                </div>
+              </button>
+            </div>
+            <!-- UNTUK SESI LOGIN -->
+            <!-- <div class="navbar-nav ml-auto">
+              <a href="#" class="btn btn-custom my-lg-0 my-1 ml-lg-3">
+                <div class="container justify-content-center px-0">
+                  <img
+                    class="btn-icon mr-2"
+                    src="icon/person-check-fill.svg"
+                    alt="user"
+                  />
+                  <span class="btn-text">Ucup Surucup</span>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="btn btn-custom my-lg-0 my-1 ml-lg-3"
+              >
+                <div class="container justify-content-center px-0">
+                  <span class="btn-text">Log Out</span>
+                </div>
+              </a>
+            </div> -->
           </div>
         </div>
-      </div>
-    </nav>
-    <!-- Navbar end -->
+      </nav>
+    </header>
 
-    <!-- Leaderboard start, sesuaikan dengan konten -->
-    <div class="container leaderboard pt-3">
-      <h2 class="text-center mb-3">Top Members</h2>
-      <table class="table table-sm table-striped table-bordered table-hover">
-        <thead class="text-center">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row" class="text-center">1</th>
-            <td>Mira</td>
-            <td>Syafril</td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-center">2</th>
-            <td>Elbert</td>
-            <td>Timothy</td>
-          </tr>
-          <tr>
-            <th scope="row" class="text-center">3</th>
-            <td>Rifqi</td>
-            <td>Rafian</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <!-- Leaderboard end -->
-	
-	 <!-- Footer start -->
-    <footer class="p-3">
-      <p class="text-center">&copy; 2020 HMFT-ITB</p>
-      <div class="container d-flex flex-column align-items-center">
-        <a class="mb-3" href="http://hmft.tf.itb.ac.id/">hmft.tf.itb.ac.id</a>
-        <div class="ig d-flex align-items-center p-1">
-          <img src="icon/ig.png" alt="instagram" height="20" />
-          <a href="http://instagram.com/sekolahskullers/">Sekolah Skullers</a>
-          <a href="http://instagram.com/hmft_itb/">HMFT-ITB</a>
+    <!-- CONTENT -->
+    <main class="flex-shrink-0" role="main">
+      <div class="container pb-3">
+        <h1>Content</h1>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-custom mt-auto pt-3 pb-1">
+      <div class="d-flex flex-column align-items-center text-center">
+        <ul>
+          <li>
+            <div class="container d-flex align-items-end">
+              <img
+                class="mr-2"
+                src="icon/globe.png"
+                alt="website"
+                height="25"
+              />
+              <a target="_blank" href="http://hmft.tf.itb.ac.id/"
+                >hmft.tf.itb.ac.id</a
+              >
+            </div>
+          </li>
+          <li>
+            <div class="container d-flex align-items-end">
+              <img
+                class="mr-2"
+                src="icon/instagram.png"
+                alt="instagram"
+                height="25"
+              />
+              <a target="_blank" href="http://instagram.com/sekolahskullers/"
+                >@sekolahskullers</a
+              >
+            </div>
+          </li>
+          <li>
+            <div class="container d-flex align-items-end">
+              <img
+                class="mr-2 pb-1"
+                src="icon/twitter.png"
+                alt="twitter"
+                width="25"
+              />
+              <a target="_blank" href="http://twitter.com/hmft_itb/"
+                >@hmft_itb</a
+              >
+            </div>
+          </li>
+        </ul>
+        <p class="mt-2 mb-0">&copy; 2020 HMFT-ITB</p>
+        <div class="img d-flex justify-content-between align-items-end my-2">
+          <img
+            src="img/logo_sekolah_skullers_sq.png"
+            alt="sekolah-skullers"
+            width="80"
+          />
+          <img src="img/logo_hmft_sq.png" alt="hmft" width="70" />
+          <img src="img/logo_skullers_sq.png" alt="skullers" width="70" />
         </div>
       </div>
     </footer>
-    <!-- Footer end -->
-	
-	<!-- Modal -->
-	<div class="modal fade" id="ModalLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-	  <div class="modal-dialog modal-dialog-centered" role="document">
-		<div class="modal-content">
-		  <div class="modal-header bg-secondary text-white pb-1 pt-1">
-			<div class="container justify-content-start p-0">
-				<div class="row pl-3">
-					<img
-					  class="icon pr-0 rounded-circle"
-					  width="45"
-					  src="icon/logo sekolah skullers.png"
-					  alt="person-circle"
-					/>
-					<h5 class="ml-2 mt-2">Selamat Datang di Sekolah Skullers!</h5>
-				</div>
-			</div>
-			<button type="button" class="close" color="#fff7cc;" data-dismiss="modal" aria-label="Close">
-			  <span aria-hidden="true">&times;</span>
-			</button>
-		  </div>
-		  <div class="modal-body pb-0" style="background-color:Gainsboro;">
-			<form>
-				<div class="form-group">
-					<label for="InputNIM1">NIM</label>
-					<input type="NIM" class="form-control" id="InputNIM1" aria-describedby="NIMHelp">
-					<small id="NIMHelp" class="form-text text-muted">Ex. 13319001</small>
-				</div>
-				<div class="form-group">
-					<label for="InputPassword1">Password</label>
-					<div class="input-group">
-						<input type="password" class="form-control" name="password" id="InputPassword1" data-toggle="password">	
-						<div class="input-group-append">
-							<span class="input-group-text">	
-							  <i class="fa fa-eye"></i>
-							</span>
-						</div>
-					</div>
-				</div>
-				<div class="form-group form-check">
-					<input type="checkbox" class="form-check-input" id="exampleCheck1">
-					<label class="form-check-label" for="exampleCheck1">Remember me</label>
-				</div>
-			</form>
-		  </div>
-		  <div class="modal-footer pt-2 pb-2" style="background-color:Gainsboro;">
-			<a href="#" class="small nav-item nav-link text-muted mr-lg-0 ml-auto active">forgot your password?</a>
-			<button type="button" class="btn btn-primary">Login</button>
-		  </div>
-		</div>
-	  </div>
-	</div>
-
-    <!-- Custom Script, jika diperlukan -->
-    <script src="js/script.js"></script>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="bootstrap-show-password.min.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap-show-password.min.js"></script>
   </body>
 </html>
