@@ -26,7 +26,7 @@ body {
 }
 
 .bg-custom {
-  background-color: #322338;
+  background-color: var(--custom);
 }
 
 /* BUTTON */
