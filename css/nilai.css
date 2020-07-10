@@ -1,0 +1,24 @@
+h4 {
+  font-family: "piratesbayregular", cursive;
+  margin: 0;
+}
+
+.profile-content {
+  width: 18rem;
+}
+
+.profile-content .progress {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  margin-bottom: 0.5rem;
+  height: 18px;
+}
+
+.progress-bar {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 576px) {
+  .profile-content {
+    width: 100%;
+  }
+}

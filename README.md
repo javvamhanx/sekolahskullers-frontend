@@ -6,4 +6,11 @@
 
 <code>register.html</code> : Halaman register
 
+<code>leaderboard.html</code> : Halaman leaderboard
+
+<code>profile.html</code> : Halaman profile
+
+<code>nilai.html</code> : Halaman nilai
+
+
 Tambahkan file html untuk tiap konten dengan referensi dari <code>template.html</code>
