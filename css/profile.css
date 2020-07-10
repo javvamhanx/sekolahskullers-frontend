@@ -20,6 +20,10 @@ h5.bar {
   width: 30px !important;
 }
 
+.level-img {
+  height: 60px;
+}
+
 .card .progress {
   width: 100%;
 }
