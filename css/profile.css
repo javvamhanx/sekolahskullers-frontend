@@ -24,6 +24,15 @@ h5.bar {
   width: 100%;
 }
 
+.progress {
+  height: 20px;
+}
+
+.progress-bar {
+  text-align: right;
+  padding-right: 0.25rem;
+}
+
 .pagination a {
   color: black;
   float: left;
