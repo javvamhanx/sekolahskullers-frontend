@@ -26,7 +26,15 @@ body {
 }
 
 .bg-custom {
-  background-color: #322338;
+  background-color: var(--custom);
+}
+
+.bg-health {
+  background-color: #e82626;
+}
+
+.bg-exp {
+  background-color: #36b90e;
 }
 
 /* BUTTON */

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="h-100" lang="en">
+<html lang="en">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -10,18 +10,21 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/template.css" />
-    <link rel="stylesheet" href="css/font-awesome.min.css" />
 
-    <title>Template</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <title>Sekolah Skullers</title>
   </head>
-  <body class="d-flex flex-column h-100">
+  <body>
     <!-- Navbar start -->
     <header>
-      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-custom">
+      <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-custom">
         <div class="container">
-          <span class="navbar-brand mr-0 mr-lg-5"> Sekolah Skullers</span>
+          <span class="navbar-brand mr-0 mr-md-5"> Sekolah Skullers</span>
           <button
             class="navbar-toggler"
             type="button"
@@ -38,21 +41,21 @@
               <a
                 href="#"
                 id="leaderboard"
-                class="nav-item nav-link mr-lg-3 active"
+                class="nav-item nav-link mr-md-3 active"
                 >Leaderboard</a
               >
-              <a href="#" id="profile" class="nav-item nav-link mr-lg-3"
+              <a href="#" id="profile" class="nav-item nav-link mr-md-3"
                 >Profile</a
               >
             </div>
             <!-- UNTUK SESI ANON -->
             <!-- <div class="navbar-nav ml-auto">
-              <a href="#" class="btn btn-custom-light my-lg-0 my-1 ml-lg-3">
+              <a href="#" class="btn btn-custom-light my-md-0 my-1 ml-md-3">
                 <div class="container justify-content-center px-0">
                   <span>Register</span>
                 </div>
               </a>
-              <a href="#" class="btn btn-custom-light my-lg-0 my-1 ml-lg-3">
+              <a href="#" class="btn btn-custom-light my-md-0 my-1 ml-md-3">
                 <div class="container justify-content-center px-0">
                   <img
                     class="btn-icon mr-2"
@@ -65,18 +68,16 @@
             </div> -->
             <!-- UNTUK SESI LOGIN -->
             <div class="navbar-nav ml-auto">
-              <div class="dropdown d-flex flex-column">
+              <div class="dropdown">
                 <button
-                  class="btn btn-custom-light my-lg-0 my-1"
+                  class="btn btn-custom-light my-md-0 my-1"
                   type="button"
                   id="dropdownMenuButton"
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  <div
-                    class="container dropdown-toggle justify-content-center px-0"
-                  >
+                  <div class="container dropdown-toggle">
                     <img
                       class="btn-icon mr-2"
                       src="icon/person-check-fill.svg"
@@ -99,7 +100,7 @@
 
     <!-- Content start -->
     <main class="flex-shrink-0" role="main">
-      <div class="container pb-3">
+      <div class="container content">
         <h1>Content</h1>
         <table class="table">
           <thead>
@@ -136,20 +137,16 @@
     <!-- Content end -->
 
     <!-- Footer start -->
-    <footer class="bg-custom mt-auto pt-3 pb-1">
-      <div class="d-flex flex-column align-items-center">
-        <div class="d-flex flex-column flex-sm-row justify-content-center">
-          <div
-            class="container link d-flex align-items-center justify-content-start justify-content-sm-end"
-          >
+    <footer>
+      <div class="footer">
+        <div class="links flex-sm-row">
+          <div class="container link justify-content-sm-end">
             <img class="mr-2" src="icon/globe.png" alt="website" height="25" />
             <a target="_blank" href="http://hmft.tf.itb.ac.id/"
               >hmft.tf.itb.ac.id</a
             >
           </div>
-          <div
-            class="container link d-flex align-items-center justify-content-start justify-content-sm-center"
-          >
+          <div class="container link justify-content-sm-center">
             <img
               class="mr-2"
               src="icon/instagram.png"
@@ -160,15 +157,13 @@
               >@sekolahskullers</a
             >
           </div>
-          <div
-            class="container link d-flex align-items-center justify-content-start justify-content-sm-start"
-          >
+          <div class="container link justify-content-sm-start">
             <img class="mr-2" src="icon/twitter.png" alt="twitter" width="25" />
             <a target="_blank" href="http://twitter.com/hmft_itb/">@hmft_itb</a>
           </div>
         </div>
-        <p class="mt-2 mb-0">&copy; 2020 HMFT-ITB</p>
-        <div class="img d-flex justify-content-between align-items-end my-sm-2">
+        <p>&copy; 2020 HMFT-ITB</p>
+        <div class="img my-sm-2">
           <img src="img/logo_hmft_sq.png" alt="hmft" width="70" />
           <img
             src="img/logo_sekolah_skullers_sq.png"

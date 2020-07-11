@@ -1,0 +1,56 @@
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+  background: var(--custom);
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.card:hover {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 1);
+  transition: box-shadow 0.15s;
+}
+
+.card-body h5 {
+  font-family: "piratesbayregular", cursive;
+}
+
+h5.bar {
+  display: inline-block;
+  width: 30px !important;
+}
+
+.level-img {
+  height: 60px;
+}
+
+.card .progress {
+  width: 100%;
+}
+
+.progress {
+  height: 20px;
+}
+
+.progress-bar {
+  text-align: right;
+  padding-right: 0.25rem;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #322338;
+  color: white;
+  border-radius: 5px;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
