@@ -1,30 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <!-- CSS -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="css/template.css" />
 
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-
     <title>Sekolah Skullers</title>
   </head>
   <body>
-    <!-- Navbar start -->
     <header>
       <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-custom">
         <div class="container">
-          <span class="navbar-brand mr-0 mr-md-5"> Sekolah Skullers</span>
+          <span class="navbar-brand mr-0 mr-md-5">Sekolah Skullers</span>
           <button
             class="navbar-toggler"
             type="button"
@@ -39,66 +34,62 @@
           <div class="collapse navbar-collapse" id="navbar">
             <div class="navbar-nav text-center p-0">
               <a
-                href="#"
+                href="../leaderboard"
                 id="leaderboard"
-                class="nav-item nav-link mr-md-3 active"
+                class="nav-item nav-link mr-md-3"
                 >Leaderboard</a
               >
-              <a href="#" id="profile" class="nav-item nav-link mr-md-3"
+              <a
+                href="../profile"
+                id="profile"
+                class="nav-item nav-link mr-md-3"
                 >Profile</a
               >
+              <a href="../nilai" id="nilai" class="nav-item nav-link mr-md-3"
+                >Nilai</a
+              >
             </div>
-            <!-- UNTUK SESI ANON -->
+            <div class="navbar-nav ml-auto">
+              <span class="btn btn-custom-light my-md-0 my-1 ml-md-3">
+                <div class="container justify-content-center px-0">
+                  <img
+                    class="btn-icon mr-2"
+                    src="icon/person-check-fill.svg"
+                    alt="user"
+                  />
+                  <span>Aristo</span>
+                </div>
+              </span>
+              <a
+                href="../accounts/logout"
+                class="btn btn-custom-light my-md-0 my-1 ml-md-3"
+              >
+                <div class="container justify-content-center px-0">
+                  <span>Logout</span>
+                </div>
+              </a>
+            </div>
             <!-- <div class="navbar-nav ml-auto">
-              <a href="#" class="btn btn-custom-light my-md-0 my-1 ml-md-3">
+              <a href="register.html" class="btn btn-custom-light my-md-0 my-1 ml-md-3">
                 <div class="container justify-content-center px-0">
                   <span>Register</span>
                 </div>
               </a>
-              <a href="#" class="btn btn-custom-light my-md-0 my-1 ml-md-3">
+              <a href="login.html" class="btn btn-custom-light my-md-0 my-1 ml-md-3">
                 <div class="container justify-content-center px-0">
                   <img
                     class="btn-icon mr-2"
-                    src="icon/person-fill.svg"
-                    alt="user"
+                    src="icon/person-fill.svg" alt="user"
                   />
                   <span>Login</span>
                 </div>
               </a>
             </div> -->
-            <!-- UNTUK SESI LOGIN -->
-            <div class="navbar-nav ml-auto">
-              <div class="dropdown">
-                <button
-                  class="btn btn-custom-light my-md-0 my-1"
-                  type="button"
-                  id="dropdownMenuButton"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <div class="container dropdown-toggle">
-                    <img
-                      class="btn-icon mr-2"
-                      src="icon/person-check-fill.svg"
-                      alt="user"
-                    />
-                    <span>Ucup Surucup</span>
-                  </div>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                  <a class="dropdown-item" href="#">Nilai</a>
-                  <a class="dropdown-item" href="#">Logout</a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </nav>
     </header>
-    <!-- Navbar end -->
 
-    <!-- Content start -->
     <main class="flex-shrink-0" role="main">
       <div class="container content">
         <h1>Content</h1>
@@ -134,9 +125,7 @@
         </table>
       </div>
     </main>
-    <!-- Content end -->
 
-    <!-- Footer start -->
     <footer>
       <div class="footer">
         <div class="links flex-sm-row">
@@ -164,24 +153,21 @@
         </div>
         <p>&copy; 2020 HMFT-ITB</p>
         <div class="img my-sm-2">
-          <img src="img/logo_hmft_sq.png" alt="hmft" width="70" />
+          <img src="img/logo_hmft.png" alt="hmft" width="70" />
           <img
-            src="img/logo_sekolah_skullers_sq.png"
+            src="img/logo_sekolah_skullers.png"
             alt="sekolah-skullers"
-            width="80"
+            width="70"
           />
-          <img src="img/logo_skullers_sq.png" alt="skullers" width="70" />
+          <img src="img/logo_skullers.png" alt="skullers" width="70" />
         </div>
       </div>
     </footer>
-    <!-- Footer end -->
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.5.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/template.js"></script>
     <script src="js/bootstrap-show-password.min.js"></script>
+    <script src="js/badge.js"></script>
   </body>
 </html>

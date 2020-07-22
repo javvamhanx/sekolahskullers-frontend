@@ -31,7 +31,12 @@
 
 h5 {
   font-family: "piratesbayregular", cursive;
+  text-align: left;
   margin: 0;
+}
+
+.level-img {
+  height: 60px;
 }
 
 .badge {

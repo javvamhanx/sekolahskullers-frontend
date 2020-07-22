@@ -1,3 +1,17 @@
+.content {
+  display: flex;
+}
+
+.nav-link{
+  font-size: 19px;
+  color: var(--custom);
+}
+
+.navbar-brand {
+  font-family: "piratesbayregular", cursive;
+  font-size: 1.5rem;
+}
+
 .right,
 .left {
   display: flex;
@@ -6,13 +20,14 @@
 }
 
 .right {
-  width: 0;
-  height: 0;
-  background-color: #322338;
+  display: none;
+  background-color: var(--custom);
   color: #fff;
 }
 
 .left {
+  flex-direction: column;
+  justify-content: start;
   width: 100%;
   height: 100vh;
 }
@@ -30,12 +45,12 @@ h1 {
 
   .right {
     display: flex;
-    height: 100vh;
+    bottom: 0;
   }
 
   .right img {
     position: fixed;
-    bottom: 0;
+    top: -80px;
     right: -400px;
     opacity: 0.6;
   }
@@ -47,7 +62,7 @@ form {
 }
 
 .form-group {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .form-control,
@@ -65,9 +80,11 @@ label {
   box-shadow: none !important;
   letter-spacing: 0.05rem;
   transition-property: border, background-color;
+  height: 2rem;
+  font-size: 0.9rem;
 }
 
 .form-control:focus {
-  border: 1px solid #322338;
+  border: 1px solid var(--custom);
   box-shadow: none !important;
 }
