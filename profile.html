@@ -34,12 +34,15 @@
           </button>
           <div class="collapse navbar-collapse" id="navbar">
             <div class="navbar-nav text-center p-0">
-              <a
-                href="../leaderboard"
-                id="leaderboard"
-                class="nav-item nav-link mr-md-3"
-                >Leaderboard</a
-              >
+              <div class="nav-item dropdown mr-md-3">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Leaderboard
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="">Keseluruhan</a>
+                  <a class="dropdown-item" href="">Mingguan</a>
+                </div>
+              </div>
               <a
                 href="../profile"
                 id="profile"
@@ -94,6 +97,8 @@
     <main class="flex-shrink-0" role="main">
       <div class="container content">
         <h1>Angkatan</h1>
+        XP: 50
+        Level: Sailors
         <h1>Profile</h1>
         <div class="row justify-content-center">
           <!-- #loop -->
